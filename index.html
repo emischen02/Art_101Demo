@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title animate-fade-in">Art Gallery</h1>
+            <p class="subtitle animate-slide-up">Where Images Come to Life</p>
+        </header>
+
+        <!-- Main Gallery Section -->
+        <main class="gallery">
+            <!-- Image Card 1 -->
+            <div class="image-card animate-float" data-delay="0.2s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Beautiful Landscape" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Mountain Vista</h3>
+                        <p class="image-description">A breathtaking view of nature's grandeur</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Card 2 -->
+            <div class="image-card animate-float" data-delay="0.4s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Ocean Waves" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Ocean Dreams</h3>
+                        <p class="image-description">The endless dance of waves and light</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Card 3 -->
+            <div class="image-card animate-float" data-delay="0.6s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=3" alt="City Lights" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Urban Symphony</h3>
+                        <p class="image-description">The vibrant pulse of city life</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Card 4 -->
+            <div class="image-card animate-float" data-delay="0.8s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=4" alt="Forest Path" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Forest Journey</h3>
+                        <p class="image-description">A peaceful walk through nature's cathedral</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Card 5 -->
+            <div class="image-card animate-float" data-delay="1.0s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=5" alt="Desert Sunset" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Desert Mirage</h3>
+                        <p class="image-description">Where the sky meets the endless sand</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Card 6 -->
+            <div class="image-card animate-float" data-delay="1.2s">
+                <div class="image-container">
+                    <img src="https://picsum.photos/400/300?random=6" alt="Flower Garden" class="gallery-image">
+                    <div class="image-overlay">
+                        <h3 class="image-title">Garden Paradise</h3>
+                        <p class="image-description">A colorful celebration of life</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Interactive Text Section -->
+        <section class="text-animation-section">
+            <div class="animated-text">
+                <span class="word animate-typewriter">Welcome</span>
+                <span class="word animate-typewriter" data-delay="1s">to</span>
+                <span class="word animate-typewriter" data-delay="2s">our</span>
+                <span class="word animate-typewriter" data-delay="3s">gallery</span>
+            </div>
+        </section>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
