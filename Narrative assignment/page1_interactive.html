@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arena of Legends - Interactive Page 1: The Gathering Storm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="page-title">The Arena of Legends</h1>
+            <h2 class="chapter-title">Chapter I: The Gathering Storm</h2>
+        </header>
+
+        <main class="content">
+            <!-- Interactive Arena Scene -->
+            <div class="interactive-scene" id="arena-scene">
+                <div class="scene-title">The Ancient Arena</div>
+                
+                <!-- Arena Structure -->
+                <div class="arena-structure">
+                    <div class="arena-wall wall-left"></div>
+                    <div class="arena-wall wall-right"></div>
+                    <div class="arena-wall wall-back"></div>
+                    <div class="arena-floor"></div>
+                    <div class="arena-pillars">
+                        <div class="pillar pillar-1"></div>
+                        <div class="pillar pillar-2"></div>
+                        <div class="pillar pillar-3"></div>
+                        <div class="pillar pillar-4"></div>
+                    </div>
+                </div>
+
+                <!-- Interactive Characters -->
+                <div class="character-container">
+                    <div class="character aldric-character" id="aldric" data-character="aldric">
+                        <div class="character-body">
+                            <div class="head"></div>
+                            <div class="torso"></div>
+                            <div class="arms">
+                                <div class="arm arm-left"></div>
+                                <div class="arm arm-right"></div>
+                            </div>
+                            <div class="legs">
+                                <div class="leg leg-left"></div>
+                                <div class="leg leg-right"></div>
+                            </div>
+                        </div>
+                        <div class="character-name">Marth</div>
+                        <div class="character-info">
+                            <p>Click to learn more about this warrior</p>
+                        </div>
+                    </div>
+
+                    <div class="character thane-character" id="thane" data-character="thane">
+                        <div class="character-body">
+                            <div class="head"></div>
+                            <div class="torso"></div>
+                            <div class="arms">
+                                <div class="arm arm-left"></div>
+                                <div class="arm arm-right"></div>
+                            </div>
+                            <div class="legs">
+                                <div class="leg leg-left"></div>
+                                <div class="leg leg-right"></div>
+                            </div>
+                        </div>
+                        <div class="character-name">Byleth</div>
+                        <div class="character-info">
+                            <p>Click to learn more about this warrior</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Elements -->
+                <div class="interactive-elements">
+                    <div class="clickable-element sun" id="sun" data-element="sun">
+                        <div class="sun-body"></div>
+                        <div class="sun-rays">
+                            <div class="ray ray-1"></div>
+                            <div class="ray ray-2"></div>
+                            <div class="ray ray-3"></div>
+                            <div class="ray ray-4"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="clickable-element clouds" id="clouds" data-element="clouds">
+                        <div class="cloud cloud-1"></div>
+                        <div class="cloud cloud-2"></div>
+                        <div class="cloud cloud-3"></div>
+                    </div>
+
+                    <div class="clickable-element audience" id="audience" data-element="audience">
+                        <div class="audience-row">
+                            <div class="person person-1"></div>
+                            <div class="person person-2"></div>
+                            <div class="person person-3"></div>
+                            <div class="person person-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Text with Interactive Reveals -->
+                <div class="story-text interactive-story">
+                    <p class="opening-line clickable-text" data-reveal="opening">The ancient arena stood silent under a blood-red sunset, its weathered stones bearing witness to countless battles of legend.</p>
+                    
+                    <p class="story-paragraph clickable-text" data-reveal="aldric-intro">Thunder rumbled in the distance as two figures emerged from opposite ends of the colosseum. The first, a tall warrior clad in silver armor, moved with the grace of a mountain cat. His name was <span class="character-name">Marth</span>, and his reputation for lightning-fast strikes preceded him across the seven kingdoms.</p>
+
+                    <p class="story-paragraph clickable-text" data-reveal="thane-intro">From the shadows of the eastern gate emerged his opponent: <span class="character-name">Byleth</span>, a massive figure whose very presence seemed to make the ground tremble. His weathered face bore the scars of a hundred battles, and his eyes burned with the fire of a warrior who had never known defeat.</p>
+
+                    <div class="dialogue interactive-dialogue" data-reveal="dialogue-1">
+                        <p class="speaker">Marth:</p>
+                        <p class="speech">"So, the legendary Byleth finally emerges from his mountain fortress. I had heard tales of your strength, but seeing it in person... it's almost disappointing."</p>
+                    </div>
+
+                    <div class="dialogue interactive-dialogue" data-reveal="dialogue-2">
+                        <p class="speaker">Byleth:</p>
+                        <p class="speech">"Words are wind, boy. Let your blade speak, if you dare. I've crushed better men than you before breakfast."</p>
+                    </div>
+
+                    <p class="story-paragraph clickable-text" data-reveal="tension">The tension in the air was palpable. Spectators in the upper tiers leaned forward, their breath held in anticipation. Even the birds had ceased their songs, as if nature itself awaited the coming storm of steel and fury.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Character Profiles -->
+            <div class="character-profiles interactive-profiles">
+                <div class="character-card interactive-card" data-character="aldric">
+                    <div class="character-silhouette aldric-silhouette"></div>
+                    <h3>Marth</h3>
+                    <div class="character-stats">
+                        <p><strong>Age:</strong> 17</p>
+                        <p><strong>Weapon:</strong> Falchion (Divine Blade)</p>
+                        <p><strong>Specialty:</strong> Speed & Precision</p>
+                        <p><strong>Background:</strong> Prince of Altea, Hero-King of legend</p>
+                    </div>
+                    <div class="interactive-actions">
+                        <button class="action-btn" data-action="show-abilities">Show Abilities</button>
+                        <button class="action-btn" data-action="show-history">Show History</button>
+                    </div>
+                </div>
+
+                <div class="character-card interactive-card" data-character="thane">
+                    <div class="character-silhouette thane-silhouette"></div>
+                    <h3>Byleth</h3>
+                    <div class="character-stats">
+                        <p><strong>Age:</strong> 21</p>
+                        <p><strong>Weapon:</strong> Sword of the Creator (Relic Weapon)</p>
+                        <p><strong>Specialty:</strong> Raw Power & Tactics</p>
+                        <p><strong>Background:</strong> Ashen Demon, Professor at Garreg Mach Monastery</p>
+                    </div>
+                    <div class="interactive-actions">
+                        <button class="action-btn" data-action="show-abilities">Show Abilities</button>
+                        <button class="action-btn" data-action="show-history">Show History</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Atmosphere Effects -->
+            <div class="atmosphere-effects interactive-effects">
+                <div class="wind-particles"></div>
+                <div class="dust-motes"></div>
+                <div class="lightning-flash" id="lightning"></div>
+            </div>
+        </main>
+
+        <footer class="page-navigation">
+            <a href="cover.html" class="nav-button back-button">
+                <span class="button-arrow">←</span>
+                <span class="button-text">Back to Cover</span>
+            </a>
+            <a href="page2.html" class="nav-button next-button">
+                <span class="button-text">Choose Your Weapons</span>
+                <span class="button-arrow">→</span>
+            </a>
+        </footer>
+
+        <div class="page-number">1</div>
+    </div>
+
+    <!-- Interactive Modal for Character Details -->
+    <div class="modal" id="character-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Character Details</h2>
+            <div id="modal-body">
+                <p>Character information will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive JavaScript for the narrative page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeInteractivity();
+            initializeCharacterInteractions();
+            initializeSceneInteractions();
+            initializeTextReveals();
+        });
+
+        function initializeInteractivity() {
+            // Add hover effects to all interactive elements
+            const interactiveElements = document.querySelectorAll('.clickable-element, .clickable-text, .interactive-card');
+            
+            interactiveElements.forEach(element => {
+                element.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.boxShadow = '0 10px 30px rgba(255, 215, 0, 0.4)';
+                });
+                
+                element.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '0 5px 15px rgba(255, 215, 0, 0.2)';
+                });
+            });
+        }
+
+        function initializeCharacterInteractions() {
+            // Character click interactions
+            const characters = document.querySelectorAll('.character');
+            const modal = document.getElementById('character-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const closeBtn = document.querySelector('.close');
+
+            characters.forEach(character => {
+                character.addEventListener('click', function() {
+                    const characterType = this.dataset.character;
+                    showCharacterDetails(characterType);
+                });
+            });
+
+            // Action button interactions
+            const actionButtons = document.querySelectorAll('.action-btn');
+            actionButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const action = this.dataset.action;
+                    const character = this.closest('.interactive-card').dataset.character;
+                    performCharacterAction(character, action);
+                });
+            });
+
+            // Modal close functionality
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        function showCharacterDetails(characterType) {
+            const modal = document.getElementById('character-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+
+            if (characterType === 'aldric') {
+                modalTitle.textContent = 'Marth';
+                modalBody.innerHTML = `
+                    <div class="character-detail">
+                        <h3>Abilities</h3>
+                        <ul>
+                            <li>Lightning Strike - Can attack with incredible speed</li>
+                            <li>Divine Grace - Enhanced agility and balance</li>
+                            <li>Falchion's Power - Can see through illusions and darkness</li>
+                        </ul>
+                        <h3>Fighting Style</h3>
+                        <p>Marth relies on speed and precision, using quick strikes to exploit weaknesses in his opponent's defense.</p>
+                    </div>
+                `;
+            } else if (characterType === 'thane') {
+                modalTitle.textContent = 'Byleth';
+                modalBody.innerHTML = `
+                    <div class="character-detail">
+                        <h3>Abilities</h3>
+                        <ul>
+                            <li>Divine Pulse - Can rewind time to correct mistakes</li>
+                            <li>Ashen Demon - Incredible combat prowess</li>
+                            <li>Sword of the Creator - Can extend and retract the blade</li>
+                        </ul>
+                        <h3>Fighting Style</h3>
+                        <p>Byleth uses tactical thinking and raw power to break through defenses and end fights quickly.</p>
+                    </div>
+                `;
+            }
+
+            modal.style.display = 'block';
+        }
+
+        function performCharacterAction(character, action) {
+            if (action === 'show-abilities') {
+                showCharacterDetails(character);
+            } else if (action === 'show-history') {
+                // Add history display logic here
+                alert(`${character} history would be displayed here!`);
+            }
+        }
+
+        function initializeSceneInteractions() {
+            // Sun interaction
+            const sun = document.getElementById('sun');
+            sun.addEventListener('click', function() {
+                this.style.animation = 'sunPulse 1s ease-in-out';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 1000);
+                
+                // Trigger lightning effect
+                const lightning = document.getElementById('lightning');
+                lightning.style.display = 'block';
+                setTimeout(() => {
+                    lightning.style.display = 'none';
+                }, 500);
+            });
+
+            // Clouds interaction
+            const clouds = document.getElementById('clouds');
+            clouds.addEventListener('click', function() {
+                this.style.animation = 'cloudMove 2s ease-in-out';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 2000);
+            });
+
+            // Audience interaction
+            const audience = document.getElementById('audience');
+            audience.addEventListener('click', function() {
+                const people = this.querySelectorAll('.person');
+                people.forEach((person, index) => {
+                    setTimeout(() => {
+                        person.style.animation = 'cheer 0.5s ease-in-out';
+                        setTimeout(() => {
+                            person.style.animation = '';
+                        }, 500);
+                    }, index * 100);
+                });
+            });
+        }
+
+        function initializeTextReveals() {
+            const clickableTexts = document.querySelectorAll('.clickable-text');
+            
+            clickableTexts.forEach(text => {
+                text.addEventListener('click', function() {
+                    this.classList.add('revealed');
+                    
+                    // Add special effects based on the reveal type
+                    const revealType = this.dataset.reveal;
+                    if (revealType === 'opening') {
+                        // Trigger atmospheric effects
+                        const windParticles = document.querySelector('.wind-particles');
+                        windParticles.style.animation = 'windBlow 3s ease-in-out';
+                    } else if (revealType === 'aldric-intro') {
+                        // Highlight Aldric character
+                        const aldric = document.getElementById('aldric');
+                        aldric.style.animation = 'characterGlow 2s ease-in-out';
+                    } else if (revealType === 'thane-intro') {
+                        // Highlight Thane character
+                        const thane = document.getElementById('thane');
+                        thane.style.animation = 'characterGlow 2s ease-in-out';
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

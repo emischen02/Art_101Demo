@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arena of Legends - Cover Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container cover-page">
+        <!-- Cover Header -->
+        <header class="cover-header">
+            <div class="title-container">
+                <h1 class="main-title">The Arena of Legends</h1>
+                <div class="title-subtitle">
+                    <p class="subtitle-text">An Epic Tale of Honor, Battle, and Brotherhood</p>
+                    <div class="decorative-line"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Cover Content -->
+        <main class="cover-content">
+            <!-- Story Synopsis -->
+            <section class="synopsis">
+                <div class="synopsis-container">
+                    <h2 class="synopsis-title">The Legend Begins</h2>
+                    <p class="synopsis-text">
+                        In the ancient Arena of Legends, where countless warriors have tested their mettle, 
+                        two legendary fighters prepare for the battle of a lifetime. Marth, 
+                        the Hero-King of legend, faces Byleth, the Ashen Demon whose strength 
+                        is matched only by his tactical brilliance.
+                    </p>
+                    <p class="synopsis-text">
+                        But this is no ordinary duel. As steel meets steel and sparks fly, something 
+                        greater emerges from the clash of these titans - a bond forged in battle that 
+                        will change the fate of kingdoms.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Chapter Navigation -->
+            <section class="chapter-navigation">
+                <h2 class="chapters-title">Chapters</h2>
+                <div class="chapters-grid">
+                    <a href="page1.html" class="chapter-card" data-chapter="1">
+                        <div class="chapter-number">I</div>
+                        <div class="chapter-info">
+                            <h3 class="chapter-name">The Gathering Storm</h3>
+                            <p class="chapter-description">Two legendary warriors meet in the ancient arena</p>
+                        </div>
+                        <div class="chapter-arrow">→</div>
+                    </a>
+
+                    <a href="page2.html" class="chapter-card" data-chapter="2">
+                        <div class="chapter-number">II</div>
+                        <div class="chapter-info">
+                            <h3 class="chapter-name">Choose Your Weapons</h3>
+                            <p class="chapter-description">The warriors select their legendary arms</p>
+                        </div>
+                        <div class="chapter-arrow">→</div>
+                    </a>
+
+                    <a href="page3.html" class="chapter-card" data-chapter="3">
+                        <div class="chapter-number">III</div>
+                        <div class="chapter-info">
+                            <h3 class="chapter-name">The Battle Begins</h3>
+                            <p class="chapter-description">Steel meets steel in an epic confrontation</p>
+                        </div>
+                        <div class="chapter-arrow">→</div>
+                    </a>
+
+                    <a href="page4.html" class="chapter-card" data-chapter="4">
+                        <div class="chapter-number">IV</div>
+                        <div class="chapter-info">
+                            <h3 class="chapter-name">The Turning Point</h3>
+                            <p class="chapter-description">A moment of understanding changes everything</p>
+                        </div>
+                        <div class="chapter-arrow">→</div>
+                    </a>
+
+                    <a href="page5.html" class="chapter-card" data-chapter="5">
+                        <div class="chapter-number">V</div>
+                        <div class="chapter-info">
+                            <h3 class="chapter-name">Alliance Forged</h3>
+                            <p class="chapter-description">From enemies to brothers, a new legend begins</p>
+                        </div>
+                        <div class="chapter-arrow">→</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Character Preview -->
+            <section class="character-preview">
+                <h2 class="preview-title">Meet the Warriors</h2>
+                <div class="characters-showcase">
+                    <div class="character-showcase">
+                        <div class="character-silhouette aldric-silhouette"></div>
+                        <h3 class="character-showcase-name">Marth</h3>
+                        <p class="character-showcase-desc">Wielder of Falchion</p>
+                    </div>
+                    
+                    <div class="vs-divider-showcase">
+                        <div class="vs-text-showcase">VS</div>
+                        <div class="lightning-bolt-showcase"></div>
+                    </div>
+                    
+                    <div class="character-showcase">
+                        <div class="character-silhouette thane-silhouette"></div>
+                        <h3 class="character-showcase-name">Byleth</h3>
+                        <p class="character-showcase-desc">Wielder of the Sword of the Creator</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Cover Footer -->
+        <footer class="cover-footer">
+            <div class="begin-journey">
+                <a href="page1.html" class="begin-button">
+                    <span class="begin-text">Begin the Legend</span>
+                    <span class="begin-arrow">⚔️</span>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Atmospheric Effects -->
+        <div class="cover-effects">
+            <div class="floating-particles"></div>
+            <div class="arena-glow"></div>
+            <div class="legendary-aura"></div>
+        </div>
+    </div>
+
+    <script>
+        // Add interactive effects for the cover page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate chapter cards on hover
+            const chapterCards = document.querySelectorAll('.chapter-card');
+            
+            chapterCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                    this.style.boxShadow = '0 15px 40px rgba(255, 215, 0, 0.4)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = '0 8px 25px rgba(255, 215, 0, 0.2)';
+                });
+            });
+
+            // Add click animation
+            chapterCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Add a brief pulse effect
+                    this.style.animation = 'pulse 0.6s ease-in-out';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 600);
+                });
+            });
+
+            // Animate character silhouettes
+            const silhouettes = document.querySelectorAll('.character-silhouette');
+            silhouettes.forEach(silhouette => {
+                silhouette.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                    this.style.boxShadow = '0 0 30px rgba(255, 215, 0, 0.6)';
+                });
+                
+                silhouette.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '0 0 20px rgba(255, 215, 0, 0.3)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

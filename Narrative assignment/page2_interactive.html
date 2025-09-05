@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arena of Legends - Interactive Page 2: Weapons of Destiny</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="page-title">The Arena of Legends</h1>
+            <h2 class="chapter-title">Chapter II: Weapons of Destiny</h2>
+        </header>
+
+        <main class="content">
+            <!-- Interactive Weapon Selection Scene -->
+            <div class="interactive-scene weapon-scene" id="weapon-scene">
+                <div class="scene-title">Choose Your Weapon</div>
+                
+                <!-- Weapon Master -->
+                <div class="weapon-master" id="weapon-master">
+                    <div class="master-body">
+                        <div class="master-head"></div>
+                        <div class="master-torso"></div>
+                        <div class="master-arms">
+                            <div class="master-arm arm-left"></div>
+                            <div class="master-arm arm-right"></div>
+                        </div>
+                        <div class="master-legs">
+                            <div class="master-leg leg-left"></div>
+                            <div class="master-leg leg-right"></div>
+                        </div>
+                    </div>
+                    <div class="master-name">Weapon Master</div>
+                </div>
+
+                <!-- Interactive Weapon Display -->
+                <div class="weapon-selection-area">
+                    <div class="weapon-card interactive-weapon-card" id="moonlight-blade" data-weapon="moonlight-blade">
+                        <div class="weapon-silhouette sword-silhouette interactive-sword"></div>
+                        <div class="weapon-glow sword-glow"></div>
+                        <h3>Moonlight Blade</h3>
+                        <div class="weapon-stats">
+                            <div class="stat-bar">
+                                <span class="stat-label">Power</span>
+                                <div class="stat-fill power-fill" data-value="7"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="stat-label">Speed</span>
+                                <div class="stat-fill speed-fill" data-value="9"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="stat-label">Magic</span>
+                                <div class="stat-fill magic-fill" data-value="8"></div>
+                            </div>
+                        </div>
+                        <button class="select-weapon-btn" data-weapon="moonlight-blade">Select Weapon</button>
+                    </div>
+
+                    <div class="vs-divider interactive-vs">
+                        <div class="vs-text">VS</div>
+                        <div class="lightning-bolt interactive-lightning"></div>
+                    </div>
+
+                    <div class="weapon-card interactive-weapon-card" id="stormbreaker" data-weapon="stormbreaker">
+                        <div class="weapon-silhouette axe-silhouette interactive-axe"></div>
+                        <div class="weapon-glow axe-glow"></div>
+                        <h3>Stormbreaker</h3>
+                        <div class="weapon-stats">
+                            <div class="stat-bar">
+                                <span class="stat-label">Power</span>
+                                <div class="stat-fill power-fill" data-value="10"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="stat-label">Speed</span>
+                                <div class="stat-fill speed-fill" data-value="5"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="stat-label">Magic</span>
+                                <div class="stat-fill magic-fill" data-value="9"></div>
+                            </div>
+                        </div>
+                        <button class="select-weapon-btn" data-weapon="stormbreaker">Select Weapon</button>
+                    </div>
+                </div>
+
+                <!-- Interactive Story Elements -->
+                <div class="story-elements">
+                    <div class="clickable-element magical-effects" id="magical-effects">
+                        <div class="spark spark-1"></div>
+                        <div class="spark spark-2"></div>
+                        <div class="spark spark-3"></div>
+                        <div class="spark spark-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Story Text -->
+            <div class="story-text interactive-story">
+                <p class="opening-line clickable-text" data-reveal="weapon-master">The weapons master approached, carrying two ornate chests that seemed to pulse with ancient power.</p>
+
+                <p class="story-paragraph clickable-text" data-reveal="moonlight-reveal">Sir Aldric's eyes gleamed as the first chest opened, revealing the Moonlight Blade. The sword seemed to sing as it caught the light, its blade shimmering with an otherworldly blue glow. The hilt was wrapped in silver wire, and the pommel bore the crest of the ancient elven house of Lórien.</p>
+
+                <div class="dialogue interactive-dialogue" data-reveal="aldric-dialogue">
+                    <p class="speaker">Sir Aldric:</p>
+                    <p class="speech">"Ah, Moonlight Blade. I've heard the legends. They say it was forged under the light of a thousand stars and blessed by the Lady of the Wood herself."</p>
+                </div>
+
+                <p class="story-paragraph clickable-text" data-reveal="moonlight-magic">As he grasped the weapon, the blade erupted in brilliant blue light, and the very air around him seemed to shimmer with magical energy. The crowd gasped as runes along the blade's edge began to glow with ancient elven script.</p>
+
+                <p class="story-paragraph clickable-text" data-reveal="stormbreaker-reveal">Meanwhile, Thane Ironbeard's chest opened with a thunderous boom, revealing Stormbreaker. The massive axe head was forged from a metal that seemed to absorb light rather than reflect it, and the handle was carved from the heartwood of an ancient oak that had been struck by lightning a hundred times.</p>
+
+                <div class="dialogue interactive-dialogue" data-reveal="thane-dialogue">
+                    <p class="speaker">Thane Ironbeard:</p>
+                    <p class="speech">"Stormbreaker... forged in the heart of a volcano, quenched in the blood of a thunderbird. This axe has never known defeat."</p>
+                </div>
+
+                <p class="story-paragraph clickable-text" data-reveal="storm-magic">As his massive hands closed around the weapon, dark clouds began to gather overhead, and the first drops of rain began to fall. Lightning crackled along the axe's edge, and the ground beneath Thane's feet began to crack and splinter.</p>
+            </div>
+
+            <!-- Interactive Battle Preparation -->
+            <div class="battle-preparation interactive-preparation">
+                <h3>The Final Preparations</h3>
+                <div class="preparation-scene">
+                    <div class="warrior-prep aldric-prep" id="aldric-prep">
+                        <div class="warrior-silhouette aldric-silhouette"></div>
+                        <h4>Sir Aldric's Strategy</h4>
+                        <div class="strategy-details">
+                            <div class="strategy-item" data-strategy="speed">
+                                <span class="strategy-icon">⚡</span>
+                                <span class="strategy-text">Uses speed and agility to outmaneuver his opponent</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="precision">
+                                <span class="strategy-icon">🎯</span>
+                                <span class="strategy-text">Plans to strike at weak points in armor</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="magic">
+                                <span class="strategy-icon">✨</span>
+                                <span class="strategy-text">Relies on the sword's magical properties for enhanced precision</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="endurance">
+                                <span class="strategy-icon">🏃</span>
+                                <span class="strategy-text">Will attempt to tire out the larger warrior</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="warrior-prep thane-prep" id="thane-prep">
+                        <div class="warrior-silhouette thane-silhouette"></div>
+                        <h4>Thane's Strategy</h4>
+                        <div class="strategy-details">
+                            <div class="strategy-item" data-strategy="power">
+                                <span class="strategy-icon">💪</span>
+                                <span class="strategy-text">Uses overwhelming force to break through defenses</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="weight">
+                                <span class="strategy-icon">⚖️</span>
+                                <span class="strategy-text">Plans to use the axe's weight to his advantage</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="speed">
+                                <span class="strategy-icon">⚡</span>
+                                <span class="strategy-text">Will attempt to end the fight quickly with devastating blows</span>
+                            </div>
+                            <div class="strategy-item" data-strategy="endurance">
+                                <span class="strategy-icon">🛡️</span>
+                                <span class="strategy-text">Relies on his superior strength and endurance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Weather Effects -->
+            <div class="weather-effects interactive-effects">
+                <div class="rain-drops"></div>
+                <div class="lightning-flash" id="weather-lightning"></div>
+                <div class="wind-gusts"></div>
+            </div>
+        </main>
+
+        <footer class="page-navigation">
+            <a href="cover.html" class="nav-button back-button">
+                <span class="button-arrow">←</span>
+                <span class="button-text">Back to Cover</span>
+            </a>
+            <a href="page1.html" class="nav-button prev-button">
+                <span class="button-arrow">←</span>
+                <span class="button-text">Previous</span>
+            </a>
+            <a href="page3.html" class="nav-button next-button">
+                <span class="button-text">Begin the Battle</span>
+                <span class="button-arrow">→</span>
+            </a>
+        </footer>
+
+        <div class="page-number">2</div>
+    </div>
+
+    <!-- Weapon Selection Modal -->
+    <div class="modal" id="weapon-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="weapon-modal-title">Weapon Selected!</h2>
+            <div id="weapon-modal-body">
+                <p>You have chosen your weapon. The battle approaches!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive JavaScript for weapon selection
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeWeaponInteractions();
+            initializeStoryReveals();
+            initializeStrategyInteractions();
+            initializeWeatherEffects();
+        });
+
+        function initializeWeaponInteractions() {
+            const weaponCards = document.querySelectorAll('.interactive-weapon-card');
+            const selectButtons = document.querySelectorAll('.select-weapon-btn');
+            const modal = document.getElementById('weapon-modal');
+            const closeBtn = document.querySelector('.close');
+
+            // Weapon card hover effects
+            weaponCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.boxShadow = '0 15px 40px rgba(255, 215, 0, 0.4)';
+                    
+                    // Animate weapon glow
+                    const glow = this.querySelector('.weapon-glow');
+                    glow.style.animation = 'weaponPulse 1s ease-in-out infinite';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '0 8px 25px rgba(255, 215, 0, 0.2)';
+                    
+                    // Stop weapon glow animation
+                    const glow = this.querySelector('.weapon-glow');
+                    glow.style.animation = '';
+                });
+            });
+
+            // Weapon selection
+            selectButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const weapon = this.dataset.weapon;
+                    selectWeapon(weapon);
+                });
+            });
+
+            // Modal close
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        function selectWeapon(weapon) {
+            const modal = document.getElementById('weapon-modal');
+            const modalTitle = document.getElementById('weapon-modal-title');
+            const modalBody = document.getElementById('weapon-modal-body');
+
+            // Remove previous selections
+            document.querySelectorAll('.weapon-selected').forEach(el => {
+                el.classList.remove('weapon-selected');
+            });
+
+            // Mark selected weapon
+            const selectedCard = document.getElementById(weapon);
+            selectedCard.classList.add('weapon-selected');
+
+            if (weapon === 'moonlight-blade') {
+                modalTitle.textContent = 'Moonlight Blade Selected!';
+                modalBody.innerHTML = `
+                    <div class="weapon-detail">
+                        <h3>Elven Longsword</h3>
+                        <p><strong>Length:</strong> 42 inches</p>
+                        <p><strong>Weight:</strong> 2.8 pounds</p>
+                        <p><strong>Special Properties:</strong> Glows blue in moonlight, never dulls</p>
+                        <p><strong>History:</strong> Forged by the master smith Elrond of Rivendell, this blade has tasted the blood of dragons and orcs alike.</p>
+                        <div class="weapon-abilities">
+                            <h4>Special Abilities:</h4>
+                            <ul>
+                                <li>Lightning Strike - Enhanced speed attacks</li>
+                                <li>Moonlight Vision - See in darkness</li>
+                                <li>Elven Grace - Improved agility</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            } else if (weapon === 'stormbreaker') {
+                modalTitle.textContent = 'Stormbreaker Selected!';
+                modalBody.innerHTML = `
+                    <div class="weapon-detail">
+                        <h3>Dwarven War Axe</h3>
+                        <p><strong>Length:</strong> 36 inches (handle), 18 inches (blade)</p>
+                        <p><strong>Weight:</strong> 12.5 pounds</p>
+                        <p><strong>Special Properties:</strong> Can summon lightning, unbreakable</p>
+                        <p><strong>History:</strong> Crafted in the forges of Khazad-dûm, this axe has split mountains and felled giants.</p>
+                        <div class="weapon-abilities">
+                            <h4>Special Abilities:</h4>
+                            <ul>
+                                <li>Storm Call - Summon lightning</li>
+                                <li>Mountain Splitter - Devastating power attacks</li>
+                                <li>Dwarven Endurance - Never breaks</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+
+            modal.style.display = 'block';
+
+            // Trigger special effects
+            triggerWeaponEffects(weapon);
+        }
+
+        function triggerWeaponEffects(weapon) {
+            if (weapon === 'moonlight-blade') {
+                // Blue light effect
+                const magicalEffects = document.getElementById('magical-effects');
+                magicalEffects.style.background = 'radial-gradient(circle, rgba(79, 195, 247, 0.3), transparent)';
+                magicalEffects.style.animation = 'magicalGlow 2s ease-in-out';
+            } else if (weapon === 'stormbreaker') {
+                // Lightning effect
+                const lightning = document.getElementById('weather-lightning');
+                lightning.style.display = 'block';
+                setTimeout(() => {
+                    lightning.style.display = 'none';
+                }, 1000);
+            }
+        }
+
+        function initializeStoryReveals() {
+            const clickableTexts = document.querySelectorAll('.clickable-text');
+            
+            clickableTexts.forEach(text => {
+                text.addEventListener('click', function() {
+                    this.classList.add('revealed');
+                    
+                    const revealType = this.dataset.reveal;
+                    if (revealType === 'weapon-master') {
+                        // Animate weapon master
+                        const master = document.getElementById('weapon-master');
+                        master.style.animation = 'masterApproach 2s ease-in-out';
+                    } else if (revealType === 'moonlight-reveal') {
+                        // Highlight moonlight blade
+                        const blade = document.getElementById('moonlight-blade');
+                        blade.style.animation = 'weaponGlow 2s ease-in-out';
+                    } else if (revealType === 'stormbreaker-reveal') {
+                        // Highlight stormbreaker
+                        const axe = document.getElementById('stormbreaker');
+                        axe.style.animation = 'weaponGlow 2s ease-in-out';
+                    }
+                });
+            });
+        }
+
+        function initializeStrategyInteractions() {
+            const strategyItems = document.querySelectorAll('.strategy-item');
+            
+            strategyItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('strategy-active');
+                    
+                    // Add special effects based on strategy
+                    const strategy = this.dataset.strategy;
+                    if (strategy === 'speed') {
+                        this.style.animation = 'speedEffect 1s ease-in-out';
+                    } else if (strategy === 'power') {
+                        this.style.animation = 'powerEffect 1s ease-in-out';
+                    }
+                });
+            });
+        }
+
+        function initializeWeatherEffects() {
+            // Random weather effects
+            setInterval(() => {
+                const lightning = document.getElementById('weather-lightning');
+                if (Math.random() < 0.1) { // 10% chance every interval
+                    lightning.style.display = 'block';
+                    setTimeout(() => {
+                        lightning.style.display = 'none';
+                    }, 500);
+                }
+            }, 3000);
+        }
+    </script>
+
+    <style>
+        /* Additional styles for weapon selection */
+        .weapon-scene {
+            height: 600px;
+        }
+
+        .weapon-master {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .master-body {
+            position: relative;
+            width: 60px;
+            height: 80px;
+        }
+
+        .master-head {
+            width: 25px;
+            height: 25px;
+            background: #fdbcb4;
+            border-radius: 50%;
+            margin: 0 auto 5px;
+            border: 2px solid #ffd700;
+        }
+
+        .master-torso {
+            width: 35px;
+            height: 40px;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            margin: 0 auto 5px;
+            border-radius: 5px;
+            border: 2px solid #ffd700;
+        }
+
+        .master-arms, .master-legs {
+            position: absolute;
+            width: 100%;
+        }
+
+        .master-arms {
+            top: 30px;
+            height: 20px;
+        }
+
+        .master-legs {
+            bottom: 0;
+            height: 30px;
+        }
+
+        .master-arm, .master-leg {
+            position: absolute;
+            width: 12px;
+            height: 30px;
+            background: #fdbcb4;
+            border-radius: 8px;
+            border: 2px solid #ffd700;
+        }
+
+        .master-arm.arm-left { left: -8px; }
+        .master-arm.arm-right { right: -8px; }
+        .master-leg.leg-left { left: 8px; }
+        .master-leg.leg-right { right: 8px; }
+
+        .master-name {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            color: #ffd700;
+            white-space: nowrap;
+        }
+
+        .weapon-selection-area {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            z-index: 5;
+        }
+
+        .interactive-weapon-card {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .weapon-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .sword-glow {
+            background: radial-gradient(circle, #4fc3f7, #29b6f6);
+        }
+
+        .axe-glow {
+            background: radial-gradient(circle, #ff8a65, #ff5722);
+        }
+
+        .weapon-stats {
+            margin: 15px 0;
+        }
+
+        .stat-bar {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .stat-label {
+            width: 50px;
+            font-size: 0.8rem;
+            color: #c9a96e;
+        }
+
+        .stat-fill {
+            flex: 1;
+            height: 8px;
+            background: #333;
+            border-radius: 4px;
+            margin-left: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+
+        .power-fill::after { width: 70%; }
+        .speed-fill::after { width: 90%; }
+        .magic-fill::after { width: 80%; }
+
+        .select-weapon-btn {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            color: #1a1a2e;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .select-weapon-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .weapon-selected {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+        }
+
+        .interactive-preparation {
+            margin: 30px 0;
+        }
+
+        .preparation-scene {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .warrior-prep {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #ffd700;
+            text-align: center;
+        }
+
+        .strategy-details {
+            margin-top: 15px;
+        }
+
+        .strategy-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 0;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .strategy-item:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateX(5px);
+        }
+
+        .strategy-item.strategy-active {
+            background: rgba(255, 215, 0, 0.3);
+            border-left: 4px solid #ffd700;
+        }
+
+        .strategy-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .strategy-text {
+            font-size: 0.9rem;
+            color: #e8e8e8;
+        }
+
+        .magical-effects {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .spark {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        .spark-1 { top: 20%; left: 20%; animation-delay: 0s; }
+        .spark-2 { top: 30%; right: 20%; animation-delay: 0.5s; }
+        .spark-3 { bottom: 30%; left: 30%; animation-delay: 1s; }
+        .spark-4 { bottom: 20%; right: 30%; animation-delay: 1.5s; }
+
+        /* Animations */
+        @keyframes masterApproach {
+            0% { transform: translateX(-50%) translateY(-20px); opacity: 0; }
+            100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+        }
+
+        @keyframes weaponPulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.6; }
+        }
+
+        @keyframes weaponGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.8); }
+        }
+
+        @keyframes magicalGlow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes speedEffect {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+
+        @keyframes powerEffect {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .weapon-selection-area {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .preparation-scene {
+                grid-template-columns: 1fr;
+            }
+            
+            .interactive-weapon-card {
+                width: 150px;
+                height: 250px;
+            }
+        }
+    </style>
+</body>
+</html>
