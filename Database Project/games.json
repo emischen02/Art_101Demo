@@ -1,0 +1,59 @@
+[
+  {
+    "gameTitle": "Fire Emblem Engage",
+    "series": "Fire Emblem",
+    "system": "Switch",
+    "completionHours": 110,
+    "notes": "All support conversations + Fell Xenologue"
+  },
+  {
+    "gameTitle": "Fire Emblem: The Blazing Blade (Lyn + Eliwood)",
+    "series": "Fire Emblem",
+    "system": "GBA",
+    "completionHours": 45,
+    "notes": "Lyn mode 100% + Eliwood mode full completion"
+  },
+  {
+    "gameTitle": "Super Smash Bros. Ultimate (World of Light only)",
+    "series": "Smash Bros",
+    "system": "Switch",
+    "completionHours": 30,
+    "notes": "100% map, all light/dark spirits"
+  },
+  {
+    "gameTitle": "Xenoblade Chronicles 3",
+    "series": "Xenoblade",
+    "system": "Switch",
+    "completionHours": 150,
+    "notes": "All hero quests + Ascension quests + superbosses"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: Breath of the Wild",
+    "series": "Zelda",
+    "system": "Switch",
+    "completionHours": 190,
+    "notes": "All shrines, side quests, armor upgrades"
+  },
+  {
+    "gameTitle": "Persona 4 Golden",
+    "series": "Persona",
+    "system": "Various",
+    "completionHours": 90,
+    "notes": "True ending + max social links"
+  },
+  {
+    "gameTitle": "Persona 5 Royal",
+    "series": "Persona",
+    "system": "PS4/PS5",
+    "completionHours": 125,
+    "notes": "Third semester + max confidants"
+  },
+  {
+    "gameTitle": "Persona 5 Strikers",
+    "series": "Persona",
+    "system": "Switch/PS4",
+    "completionHours": 35,
+    "notes": "Side missions + bond skills"
+  }
+]
+
