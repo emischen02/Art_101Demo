@@ -564,4 +564,8 @@ function windowResized() {
   // reposition player reasonably on resize
   player.x = constrain(player.x, 10, width - 10);
   player.y = constrain(player.y, 10, height - 10);
+  // re-spawn fireflies if on start screen
+  if (!gameStarted && !gameOver) {
+    spawnFireflies();
+  }
 }
